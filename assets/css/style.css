@@ -16,7 +16,7 @@
 /* Section1 */
 .section1 {
     background-color: var(--color1);
-    padding: 20px;
+    padding:0 16px;
 }
 
 .section1 .inner-wrap {
@@ -31,19 +31,35 @@
     justify-content: space-between;
 }
 
-
 .section1 .inner-menu .ul-out {
     display: flex;
     padding: 0;
     margin: 0;
 }
-
-.section1 .inner-menu .ul-out li {
-    margin-right: 20px;
-    font-size: 20px;
-    font-weight: 500;
+.section1 .inner-menu .ul-out li{
+    padding: 20px 10px;
 }
-
+.section1 .inner-menu .ul-out > li:hover{
+    background-color: white;
+}
+.section1 .inner-menu .ul-out li {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.section1 .inner-menu .ul-out .dropdown .dropdown-menu{
+    border-radius: 0;
+    background-color: var(--color1);
+    padding: 0;
+}
+.section1 .inner-menu .ul-out .dropdown li{
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+} 
+.section1 .inner-menu .ul-out .dropdown li:hover{
+    background-color: white;
+}
 .section1 .search-form {
     background-color: white;
     padding: 5px;
